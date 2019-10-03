@@ -1,0 +1,25 @@
+```
+  docker run dhaks/lab1-delFile:1.0.2
+  docker run dhaks/lab1-delfile:1.0.2
+  #docker run dhaks/lab1-delfile:1.0.2
+  docker build . -t "dhaks/intro:1.0.2"
+  #docker run dhaks/intro:1.0.2
+  docker run dhaks/intro:1.0.2
+  cat myDelScript.sh
+  cat entrypoint.sh
+  docker ps
+  vi entrypoint.sh
+  docker build . -t "dhaks/intro:1.0.3"
+  docker run dhaks/intro:1.0.3
+  docke rps
+  docker ps
+  docker run -d dhaks/intro:1.0.3
+  docker ps
+  docker logs df11eaf8db2a
+  docker ps
+  docker kill df11eaf8db2a
+  docker ps
+  docker containers ls
+  docker container ls
+
+  ```

@@ -1,7 +1,9 @@
 FROM openjdk:8-alpine
 COPY ./myDelScript.sh /tmp/
 COPY ./entrypoint.sh /opt/
-RUN touch testing.txt
+RUN touch /opt/testing.txt && \
+ echo "this is my file created"
+
 RUN ls -ltr /opt
 RUN unzip --help
 RUN env

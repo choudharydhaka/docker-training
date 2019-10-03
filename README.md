@@ -26,23 +26,34 @@ from [here](https://wso2.com/integration/previous-releases/?utm_source=esb_page&
 
 ## docker image build
 - Dockerfile
-
+- Provide instructions
 
 file: Dockerfile
 ```docker
 FROM openjdk:8-alpine
 COPY ./myDelScript.sh /tmp/
 COPY ./entrypoint.sh /opt/
+RUN touch testing.txt
 RUN ls -ltr /opt
 RUN unzip --help
 RUN env
 # COPY ../../resources/wso2esb-4.9.0.zip /opt
 #RUN unzip
 WORKDIR /opt
-#RUN 
-CMD ["/bin", "/opt/entrypoint.sh"]
+#RUN
+CMD ["sh", "/opt/entrypoint.sh"]
+
 ```
-- Provide instructions
+
+
 - Build
+
+```sh
+docker build . -t "dhaks/intro:1.0.0"
+```
+validate image
+```
+docker images
+```
 
 ## docker run

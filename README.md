@@ -1,4 +1,4 @@
-# docker-training
+# Docker-training
 This repository allows you to learn Docker with docker-compose. You will need to navigate through branches to follow the toturials.
 
 |Branch|Description|

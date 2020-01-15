@@ -1,4 +1,4 @@
-# docker-training
+# Docker-training
 ## Description
 Run your first program with WSO2 ESB.
 

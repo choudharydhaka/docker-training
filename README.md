@@ -1,5 +1,6 @@
-# docker-training
-
+# Docker-training
+## Description
+This branch allows you to run WSO2 ESB using an alternate way. You don't need to download WSO2 ESB by yourself.
 ## Prerequisite:
 - Docker hub account: https://hub.docker.com/signup?next=%2F%3Foverlay%3Donboarding
 - Docker: https://hub.docker.com/?overlay=onboarding
@@ -10,10 +11,6 @@
 - baseimage: java
 - install script to remove a file
 - install wso2esb
-
-## Prerequisite
-- download wso2esb in local
-from [here](https://wso2.com/integration/previous-releases/?utm_source=esb_page&utm_medium=esb_page&utm_campaign=esb_page)
 
 
 ## docker image build
@@ -87,3 +84,13 @@ docker build . -t dhaks/wso2esb:1.0.0
 docker run dhaks/wso2esb:1.0.0
 ```
 
+
+## Run
+```
+docker run dhaks/wso2esb:1.0.0 -p 9443:9443 -p 9763:9763 -p 8243:8243 -p 8280:8280 -name wso2-esb
+```
+
+## Test
+```
+Go to your browser and paste the following URL (https://localhost:9443/carbon)
+```

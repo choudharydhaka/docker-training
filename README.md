@@ -1,4 +1,6 @@
 # docker-training
+## Description
+Run your first program with WSO2 ESB.
 
 ## Prerequisite:
 - Docker hub account: https://hub.docker.com/signup?next=%2F%3Foverlay%3Donboarding
@@ -58,4 +60,12 @@ validate image
 docker images
 ```
 
-## docker run
+## Run
+```
+docker run dhaks/intro:1.0.0 -p 9443:9443 -p 9763:9763 -p 8243:8243 -p 8280:8280 -name wso2-esb
+```
+
+## Test
+```
+Go to your browser and paste the following URL (https://localhost:9443/carbon)
+```
